@@ -11,8 +11,8 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-md-8 mx-auto my-5">
-            <ToDo />
             <CreateTodo />
+            <ToDo />
           </div>
         </div>
       </div>
