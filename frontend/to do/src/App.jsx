@@ -15,6 +15,7 @@ function App() {
           <div className="col-md-8 mx-auto my-5">
             <ToDo todos={todos}/>
             <CreateTodo />
+            <ToDo />
           </div>
         </div>
       </div>

@@ -28,3 +28,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('todo/', include(router.urls)),  # This line is new
 ]
+ 
