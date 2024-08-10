@@ -1,10 +1,14 @@
 from django.db import models
 from django.utils import timezone
 
+TODO_STATUS = (("Done", "Done"), ("InProgress", "InProgress"))
+
+
 class Todo(models.Model):
     title = models.CharField(max_length=100)
-    memo = models.TextField(blank=True)
-    created = models.DateTimeField(default=timezone.now)
+    detile = models.TextField(blank=True)
+    statu = models.TextField(blank=True , choices=TODO_STATUS)
+    created=models.DateTimeField(default=timezone.now)
     # completed = models.BooleanField(default=False)
 
     def __str__(self):

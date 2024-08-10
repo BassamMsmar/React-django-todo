@@ -7,15 +7,19 @@ import ToDo from "./components/ToDo";
 import CreateTodo from "./components/CreateToDo";
 
 function App() {
+  const [todos, setTodos] = useState([
+    { title: "todo1", status: "Done" },
+    { title: "todo2", status: "InProgress" },
+    { title: "todo3", status: "InProgress" },
+    { title: "todo4", status: "Done" },
+  ]);
 
-  const todos =['react', 'bootstrap', 'vite']
   return (
       <div className="container">
         <div className="row">
           <div className="col-md-8 mx-auto my-5">
-            <ToDo todos={todos}/>
             <CreateTodo />
-            <ToDo />
+            <ToDo todos={todos} setTodos={setTodos}/>
           </div>
         </div>
       </div>
