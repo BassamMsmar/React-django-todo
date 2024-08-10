@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-function ToDo({todos, setTodos}) {
-
-
+function ToDo({ todos, setTodos }) {
   return (
     <div className="container mt-4">
       <ul className="list-group">
